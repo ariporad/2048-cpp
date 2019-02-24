@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+#include <string>
+#include "Board.hpp"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-	// insert code here...
-	std::cout << "Hello, World!\n";
+	Board board;
+	InputManager inputManager;
+	while (true) {
+		board.print();
+		board.processAction(inputManager.getAction());
+	}
 	return 0;
 }
