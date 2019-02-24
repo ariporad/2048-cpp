@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F7245F32223318D00669AF8 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F7245EE2223318D00669AF8 /* Board.cpp */; };
-		5F7245F42223318D00669AF8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F7245EF2223318D00669AF8 /* InputManager.cpp */; };
-		5F7245F52223318D00669AF8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F7245F12223318D00669AF8 /* main.cpp */; };
-		5F7245F82223321000669AF8 /* C++ 2048 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F7245DD222305D100669AF8 /* C++ 2048 */; };
+		5F7245F82223321000669AF8 /* 2048-cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F7245DD222305D100669AF8 /* 2048-cpp */; };
+		5F7245FF2223332300669AF8 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F7245FB2223332300669AF8 /* Board.cpp */; };
+		5F7246002223332300669AF8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F7245FC2223332300669AF8 /* InputManager.cpp */; };
+		5F7246012223332300669AF8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F7245FE2223332300669AF8 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,20 +29,20 @@
 			dstPath = "${PROJECT_DIR}";
 			dstSubfolderSpec = 0;
 			files = (
-				5F7245F82223321000669AF8 /* C++ 2048 in CopyFiles */,
+				5F7245F82223321000669AF8 /* 2048-cpp in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5F7245DD222305D100669AF8 /* C++ 2048 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ 2048"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F7245ED2223318D00669AF8 /* Board.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Board.hpp; sourceTree = "<group>"; };
-		5F7245EE2223318D00669AF8 /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
-		5F7245EF2223318D00669AF8 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
-		5F7245F02223318D00669AF8 /* InputManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
-		5F7245F12223318D00669AF8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5F7245DD222305D100669AF8 /* 2048-cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "2048-cpp"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7245F22223318D00669AF8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5F7245FA2223332300669AF8 /* InputManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
+		5F7245FB2223332300669AF8 /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		5F7245FC2223332300669AF8 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		5F7245FD2223332300669AF8 /* Board.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Board.hpp; sourceTree = "<group>"; };
+		5F7245FE2223332300669AF8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +59,8 @@
 		5F7245D4222305D100669AF8 = {
 			isa = PBXGroup;
 			children = (
-				5F7245EE2223318D00669AF8 /* Board.cpp */,
-				5F7245ED2223318D00669AF8 /* Board.hpp */,
-				5F7245EF2223318D00669AF8 /* InputManager.cpp */,
-				5F7245F02223318D00669AF8 /* InputManager.hpp */,
-				5F7245F12223318D00669AF8 /* main.cpp */,
 				5F7245F22223318D00669AF8 /* README.md */,
+				5F7245F92223332300669AF8 /* src */,
 				5F7245DE222305D100669AF8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,17 +68,29 @@
 		5F7245DE222305D100669AF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F7245DD222305D100669AF8 /* C++ 2048 */,
+				5F7245DD222305D100669AF8 /* 2048-cpp */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5F7245F92223332300669AF8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5F7245FA2223332300669AF8 /* InputManager.hpp */,
+				5F7245FB2223332300669AF8 /* Board.cpp */,
+				5F7245FC2223332300669AF8 /* InputManager.cpp */,
+				5F7245FD2223332300669AF8 /* Board.hpp */,
+				5F7245FE2223332300669AF8 /* main.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F7245DC222305D100669AF8 /* C++ 2048 */ = {
+		5F7245DC222305D100669AF8 /* 2048-cpp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F7245E4222305D100669AF8 /* Build configuration list for PBXNativeTarget "C++ 2048" */;
+			buildConfigurationList = 5F7245E4222305D100669AF8 /* Build configuration list for PBXNativeTarget "2048-cpp" */;
 			buildPhases = (
 				5F7245D9222305D100669AF8 /* Sources */,
 				5F7245DA222305D100669AF8 /* Frameworks */,
@@ -93,9 +101,9 @@
 			);
 			dependencies = (
 			);
-			name = "C++ 2048";
+			name = "2048-cpp";
 			productName = "C++ 2048";
-			productReference = 5F7245DD222305D100669AF8 /* C++ 2048 */;
+			productReference = 5F7245DD222305D100669AF8 /* 2048-cpp */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F7245DC222305D100669AF8 /* C++ 2048 */,
+				5F7245DC222305D100669AF8 /* 2048-cpp */,
 			);
 		};
 /* End PBXProject section */
@@ -134,9 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F7245F42223318D00669AF8 /* InputManager.cpp in Sources */,
-				5F7245F32223318D00669AF8 /* Board.cpp in Sources */,
-				5F7245F52223318D00669AF8 /* main.cpp in Sources */,
+				5F7246002223332300669AF8 /* InputManager.cpp in Sources */,
+				5F7245FF2223332300669AF8 /* Board.cpp in Sources */,
+				5F7246012223332300669AF8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +292,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F7245E4222305D100669AF8 /* Build configuration list for PBXNativeTarget "C++ 2048" */ = {
+		5F7245E4222305D100669AF8 /* Build configuration list for PBXNativeTarget "2048-cpp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F7245E5222305D100669AF8 /* Debug */,
